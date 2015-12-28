@@ -57,13 +57,11 @@ time efficiently?
 
 > I would have written a shorter letter, but I did not have the time. &mdash; Blaise Pascal
 
-Most of the ways of derailing a thread are things that make a thread longer
-but do not advance the core goal. Even if OP is very disciplined, one person
-can massively grow threads.
-
 Here's the problem:
 
   * Every issue must be distilled down to a core problem that fits in a person's brain. If you do not do that distilling, someone else has to!
   * Easy issues will naturally be resolved faster. The more work the reader must do to help, the less likely you are to get help super quick.
 
 So to use everyone else's time most efficiently, *you* have to distill things. If you do this, more people will be able to help and you will have better outcomes in aggregate!
+
+> **Note:** All of the ways of derailing a thread are things that make a thread longer but do not advance the core goal. Even if OP is very disciplined, one person can massively grow threads. More is never better here!
