@@ -7,8 +7,7 @@ Collaborating on open source projects is tough! Often folks want to help, but th
 This repo distills these learnings into guidelines for:
 
   * [issues](issues.md)
-  * pull requests
-  * design discussions
+  * [pull requests](pulls.md)
 
-[A robot named process-bot](https://github.com/process-bot) reads github issues
-and tries to help folks follow these guidelines!
+A robot named [process-bot](https://github.com/process-bot) reads GitHub
+issues and tries to help folks follow these guidelines!
