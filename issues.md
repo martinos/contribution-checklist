@@ -1,20 +1,20 @@
 
 # Issue Process
 
-The number one skill here is empathy. Am I treating people nice? Do I have reasonable expectations of others? Am I using other people's time efficiently? Folks are trying to make cool stuff and have fun, and everything works better if you are too!
+The number one skill here is empathy. Am I treating people nice? Do I have reasonable expectations of others? Am I using other people's time efficiently? Can I anticipate questions and answer them before anyone asks?
 
 
 ## Issue Checklist
 
 Ask yourself these questions when creating a new issue:
 
-  * Is your title as clear and specific as possible?
-  * Did you include a minimal, reproducable example? Is it an [SSCCE][sscce]?
-  * What OS and browser are you using? What versions?
-  * What version of Elm are you using?
-  * Is there anything weird about your computer we should know?
-  * How long would it take for a reader to figure out what you are trying to say? Can it be less time?
-  * Will a reader spend a lot of time building or installing things? Can this be avoided?
+  * [ ] Is your title as clear and specific as possible?
+  * [ ] Did you include a minimal, reproducable example? Is it an [SSCCE][sscce]?
+  * [ ] What OS and browser are you using? What versions?
+  * [ ] What version of Elm are you using?
+  * [ ] Is there anything weird about your computer we should know?
+  * [ ] How long would it take for a reader to figure out what you are trying to say? Can it be less time?
+  * [ ] Will a reader spend a lot of time building or installing things? Can this be avoided?
 
 Sometimes you cannot do all of these, and that is totally fine! Still open the
 issue, but make a note about what is missing and ask for help.
@@ -28,9 +28,6 @@ issue, but make a note about what is missing and ask for help.
 ## Issue Participation
 
 You are about to comment on an issue. Before you do, consider these facts.
-
-
-#### Longer issues are harder to understand
 
 
 #### Issues are for work
@@ -51,3 +48,19 @@ This stuff is fun and easy, but it makes *work* harder by making the thread
 longer and less focused. So when you are about to comment, ask yourself:
 **does the person fixing this issue need to read this?** Am I using their
 time efficiently?
+
+
+#### Longer issues are harder to understand
+
+> I would have written a shorter letter, but I did not have the time.
+>
+> &mdash; Blaise Pascal
+
+Every issue must be distilled down to a core idea or problem that fits in a
+person's brain. If you do not do that distilling, someone else has to!
+
+Furthermore, easy issues will naturally be resolved faster. The more work the
+reader must do to help, the less likely you are to get help super quick.
+
+So to use everyone else's time most efficiently, *you* have to distill things.
+If you do this, you will have better outcomes in aggregate!
