@@ -1,0 +1,7 @@
+Hi, I am a robot that helps currate issues. Thanks for creating this one!
+
+My human colleagues are easily confused, so please see if you did everything
+on the [help-the-humans checklist](). Just edit the title or description
+*directly* if you need to add more info.
+
+From there, a human will eventually arrive to take [the next steps]().
