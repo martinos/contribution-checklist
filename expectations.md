@@ -6,16 +6,15 @@ The easiest way to have more fun in open source is to know what to expect from T
 
 ## “Simple” Problems
 
-> This issue is so *simple*! How come I cannot get X to do Y?!
+> If there was a $20 bill on the ground, somebody would have already picked it up. &mdash; Economics Joke
 
-Things are more complex than they look in 90% of cases. In a large project, a “simple” change may be related to other pieces that you have never seen before. Or it may just require folks to do a context switch that would derail unrelated ongoing work. It is very hard to switch to thinking about a compiler or complex library ecosystem for just 10 minutes at a time. It makes much more sense to switch for a day or a week and address the issues very thoroughly.
+If something “simple” is taking a long time, there is probably a good reason. It probably means:
 
-So when something “simple” is taking a long time, it probably means:
-
-  1. It is more complicated than it seems.
+  1. It is more complicated than it seems. Maybe it makes weird assumptions or interacts with something else in a bad way.
   2. To explain why it is complicated may take longer than just fixing it.
-  3. The overall prioritization of work across the entire project means that
-    “the best option” is to circle back to the issue at a later date.
+  3. The overall prioritization of work across the entire project means that “the best option” is to circle back to the issue at a later date.
+
+The third one is the most insidious because it means a medium complexity issue in `core` can get blocked by an unrelated revamp of `elm-package`. Issues are resolved most efficiently when you can spend one or two solid days focused on the relevant repo, so this “batching” often means that the fastest *overall* outcome means individual items may stall for a while.
 
 So things can hibernate for a bunch of reasons, but do not get discouraged! It seems that this is a natural part of The Process, and the best thing to do is to try something else until it is unblocked!
 
