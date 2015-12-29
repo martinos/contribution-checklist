@@ -1,61 +1,39 @@
+
 # Expectations
 
-The easiest way to have more fun in open source is to know what to expect from
-the process!
+The easiest way to have more fun in open source is to know what to expect from The Process! This page outlines a few things that can seem frustrating, but make sense when you see the bigger picture.
 
 
 ## “Simple” Problems
 
-Things are more complex than they look in 90% of cases. In a large project,
-a “simple” change may be related to other pieces that you have never seen
-before. If your issue really is simple, it will be resolved pretty quickly.
+> This issue is so *simple*! How come I cannot get X to do Y?!
 
-When something “simple” is taking a long time, it probably means:
+Things are more complex than they look in 90% of cases. In a large project, a “simple” change may be related to other pieces that you have never seen before. Or it may just require folks to do a context switch that would derail unrelated ongoing work. It is very hard to switch to thinking about a compiler or complex library ecosystem for just 10 minutes at a time. It makes much more sense to switch for a day or a week and address the issues very thoroughly.
+
+So when something “simple” is taking a long time, it probably means:
 
   1. It is more complicated than it seems.
   2. To explain why it is complicated may take longer than just fixing it.
   3. The overall prioritization of work across the entire project means that
     “the best option” is to circle back to the issue at a later date.
 
-So things can hibernate for a bunch of reasons, but do not get discouraged! It
-seems that this is a natural part of The Process, and the best thing to do is
-to try something else until it is unblocked!
+So things can hibernate for a bunch of reasons, but do not get discouraged! It seems that this is a natural part of The Process, and the best thing to do is to try something else until it is unblocked!
 
 
 ## Results
 
-New folks usually think that success means “we solved it in 5 minutes”.
-That is fun and amazing when it is possible, but lots of times it cannot be
-that way. It is almost always more complex than that, so it is better to
-think of contributions as part of The Process, not as a a standalone event.
+A lot of folks think that a successful result implies that a change got merged really quickly. This is a self-defeating mindset, especially considering that a very small fraction of changes *should* be merged in the first place. The statistics set you up for “failure” as defined by this metric.
 
-  * If you are creating an issue and followed [the checklist](issues.md), you
-    made a successful contribution to The Process. An issue must be *known*
-    before it can be fixed!
+A healthier mindset is to see these things as personal projects. Can I work on something fun? Can I learn some new ideas? Try out a cool technique? Can I start to learn a large codebase with an eye towards making bigger changes or just to learn how to make something big of my own? Can I teach other people the interesting things I learned? Can I set other people up to do a better job?
 
-  * If you made a PR that got stuck for some reason, you explored an
-    implementation strategy. Maybe it wasn't the right one or it wasn't the
-    right time for it, but this happens in The Process. If you view a PR as
-    a learning opportunity for yourself and the community, this is an
-    obviously valuable part of The Process.
-
-  * If you have a design idea or feature request that does not get implemented,
-    welcome to the club ;) A good maintainer is throwing away maybe 95% of
-    their *own* ideas. To make excellent APIs, you probably want to go with the
-    10th draft, but that would not exist without drafts 1 through 9! 
-
-The Process includes all of these outcomes!
+this way of thinking makes things a lot nicer if you have a hibernating pull request (blocked on prioritization or something). You have explored an implementation strategy. Possibly the right one ultimately. When prioritization changes, someone will show up to a great PR and be really grateful for your work!
 
 
-## Tone
+## Tone / Relationships
 
-It can be really frustrating when things are going slow. Maybe no one is
-replying to you or things seem stalled in a review. 
+It can be really frustrating when things are going slow. Maybe no one is replying to you or things seem stalled. 100% of people who do open source work experience this.
 
-Open source goes faster when it is fun and friendly, so just be nice!
+One natural way to handle this is get mad at people. Unfortunately, this is very likely to make things worse. No one wants to get yelled at by an internet stranger at their hobby or side-project. So they won't! They do not owe you anything and can just go do something more fun instead. So it is not necissarily wrong to be mad, it just will not help you achieve your goal. Furthermore, it will hurt future efforts if you have bad relationships with the people you are trying to collaborate with!
 
-
-If you are being nice, things are probably going as fast as possible. And
-hopefully The Process will make “as fast as possible” a little bit faster!
-
+When people collaborate well together, a bunch of factors usually come together. *They trust each other.* Everyone knows that the others are doing their best to make something cool. *They are having fun!* Almost everyone working on open source is doing it for fun. Things go faster and work better when you feel good about the process. **So it just works better to give others the benefit of the doubt and to not take things too seriously.** Open source goes faster when it is fun and friendly!
 
