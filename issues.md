@@ -28,31 +28,39 @@ Sometimes you cannot do all of these, and that is totally fine! Still open the i
 
 ## Issue Participation
 
-You are about to comment on an issue. Before you do, consider these facts.
+When you are about to comment, ask yourself: do the people fixing this issue need this information? **Am I using their time efficiently?** The following points refine exactly what that means.
 
 
-#### Issues are for work
-
-Issues are for discussing a technical problem. What is the root cause? What code may be related? Can we find other [SSCCE][sscce]'s that help us understand the problem?
-
-You are derailing an issue if you are:
-
-  * **Sharing opinions** &mdash; Opinions are easy to have and *feel* helpful, but they pretty much always slow down an issue.
-  * **Voting** &mdash; Adding a "+1" or "I want this too" is actively not helpful. Prioritization is not a democracy, and even if it was, counting +1's is not a good way to get a representative sample.
-  * **Broadening the issue** &mdash; Keeping issues focused is extremely difficult. If you want to talk about a bigger issue that is raised, open a new issue. Do not hijack an issue!
-
-This stuff is fun and easy, but it makes *work* harder by making the thread longer and less focused. So when you are about to comment, ask yourself: **does the person fixing this issue need to read this?** Am I using their time efficiently?
-
-
-#### Longer issues are harder to understand
+#### Long issues are hard to understand
 
 > I would have written a shorter letter, but I did not have the time. &mdash; Blaise Pascal
 
-Here's the problem:
+Understanding a 10 comment discussion is quite difficult. If this happens to a thread, it makes sense to:
 
-  * Every issue must eventually be distilled down to a core problem that fits in a person's brain. If you do not do that distilling, someone else has to!
-  * Easy issues will naturally be resolved faster. The more work the reader must do to help, the less likely you are to get help super quick.
+  1. Revise the original post to capture all the new information.
+  2. Close the issue and open a new one that captures all the new information.
 
-So to use everyone else's time most efficiently, *you* have to distill things. If you do this, more people will be able to help and you will have better outcomes in aggregate!
+Either way works. If you want to do this but do not have enough admin priveledges, just ask a collaborator to get you added for curation abilities.
 
-> **Note:** All of the ways of derailing a thread are things that make a thread longer but do not advance the core goal. Even if OP is very disciplined, one person can massively grow threads. More is not better here!
+
+#### Broad issues are less successful
+
+The best issues are very narrowly focused. I want to do X, and everyone focuses on X. What is the root cause? What code may be related? Can we find other [SSCCE][sscce]'s that help us understand the problem? In these issues, “success” is very obvious because X is resolved.
+
+There are many kinds of comments that make it harder to have a “successful” result.
+
+  * **Sharing opinions** &mdash; Opinions are easy to have, but if they cannot be refined into a concrete technical concern it is probably better to save it. This is a fuzzy line, so maybe callibrate your judgement by watching how the thread evolves from your comment and seeing who, if anyone, follows up.
+  * **Voting** &mdash; Commenting with "+1" is not helpful. Prioritization is not a democracy, and even if it was, counting +1's is not a good way to get a representative vote. If you have a specific personal experience like “this blocks me from doing Y”, that *can* be helpful if the broader implications of the issue were not clear otherwise.
+  * **Broadening** &mdash; Sometimes an issue points to a broader question. If so, open a *new* issue about that specifically and point back to the issue that inspired it. This way each one stays more focused can be handled independently. This way complex topics become a network of well-defined ideas, rather than one big glob of discussion.
+
+Part of the problem with all of these is simply that they make threads longer.
+
+Now you cannot retroactively stop people from doing any of these things, but you *can* use your comments to recover focus. **If a comment is getting off-topic, just pretend it did not happen.** This is a surprisingly effective technique for keeping things on track.
+
+
+#### Experiment with your behavior
+
+None of these points should discourage you from commenting or helping with something. The only way to improve is to mess up. I mean that literally. Every skill I have in online communication comes from making public and embarassing mistakes! It always feels like a big deal at the time, but ultimately no one else remembers and you come out with skills that make things smoother and more fun for everyone.
+
+**So just try things out, and be reflective!** If no one engages with the comment, try something else. If someone tells you that X is disruptive or distracting, take it as a data point. Folks on the internet always *sound* extra mean, but they are almost always trying to make things better and more fun. So try to separate the emotions from the actual concern. If you find that people are engaged with you and happy to talk, do more of that!
+

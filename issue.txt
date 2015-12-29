@@ -1,7 +1,9 @@
 Hi, I am a robot that helps currate issues. Thanks for creating this one!
 
-My human colleagues are easily confused, so please see if you did everything
-on the [help-the-humans checklist](). Just edit the title or description
-*directly* if you need to add more info.
+My human colleagues are easily confused, so please see if you did everything on the [issue checklist][checklist]. Just edit the title or description *directly* if you need to add more info.
 
-From there, a human will eventually arrive to take [the next steps]().
+If you are going to comment, keep [these things][participation] in mind! And everyone should have [clear expectations][expectations] about how issues go.
+
+[checklist]: https://github.com/process-bot/the-process/blob/master/issues.md#issue-checklist
+[participation]: https://github.com/process-bot/the-process/blob/master/issues.md#issue-participation
+[expectations]: https://github.com/process-bot/the-process/blob/master/expectations.md
