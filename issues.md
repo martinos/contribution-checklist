@@ -43,22 +43,24 @@ Understanding a 10 comment discussion is quite difficult. If this happens to a t
 Either way works. If you want to do this but do not have enough admin priveledges, just ask a collaborator to get you added for curation abilities.
 
 
-#### Broad issues are less successful
+#### Unfocused issues are less successful
 
-The best issues are very narrowly focused. I want to do X, and everyone focuses on X. What is the root cause? What code may be related? Can we find other [SSCCE][sscce]'s that help us understand the problem? In these issues, “success” is very obvious because X is resolved.
+> If you wish to make an apple pie from scratch, you must first invent the universe. &mdash; Carl Sagan
 
-There are many kinds of comments that make it harder to have a “successful” result.
+It is safe to say that more people bake applie pies than invent the universe. Point is, the best issues are very narrowly focused, even if there is technically more to say.
 
-  * **Sharing opinions** &mdash; Opinions are easy to have, but if they cannot be refined into a concrete technical concern it is probably better to save it. This is a fuzzy line, so maybe callibrate your judgement by watching how the thread evolves from your comment and seeing who, if anyone, follows up.
-  * **Voting** &mdash; Commenting with "+1" is not helpful. Prioritization is not a democracy, and even if it was, counting +1's is not a good way to get a representative vote. If you have a specific personal experience like “this blocks me from doing Y”, that *can* be helpful if the broader implications of the issue were not clear otherwise.
-  * **Broadening** &mdash; Sometimes an issue points to a broader question. If so, open a *new* issue about that specifically and point back to the issue that inspired it. This way each one stays more focused can be handled independently. This way complex topics become a network of well-defined ideas, rather than one big glob of discussion.
+There are a few common ways of making an issue less focused:
 
-Part of the problem with all of these is simply that they make threads longer.
+  * **Sharing opinions** &mdash; Opinions are easy to have, but if they cannot be refined into a concrete technical concern it is probably better to save it.
+  * **Voting** &mdash; Commenting with "+1" is not helpful. If you have a specific personal experience like “this blocks me from doing Y”, that *can* be helpful if the broader implications of the issue were not clear otherwise.
+  * **Broadening** &mdash; Sometimes an issue points to a broader question. If so, open a *new* issue about that specifically and point back to the issue that inspired it. This way each one stays more focused can be handled independently.
 
 Now you cannot retroactively stop people from doing any of these things, but you *can* use your comments to recover focus. **If a comment is getting off-topic, just pretend it did not happen.** This is a surprisingly effective technique for keeping things on track.
 
 
 #### Experiment with your behavior
+
+> 
 
 None of these points should discourage you from commenting or helping with something. The only way to improve is to mess up. I mean that literally. Every skill I have in online communication comes from making public and embarassing mistakes! It always feels like a big deal at the time, but ultimately no one else remembers and you come out with skills that make things smoother and more fun for everyone.
 
