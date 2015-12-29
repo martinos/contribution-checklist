@@ -22,14 +22,18 @@ So things can hibernate for a bunch of reasons, but do not get discouraged! It s
 
 ## Results
 
+> Life is a journey, not a destination. &mdash; Ralph Waldo Emerson
+
 A lot of folks think that a successful result implies that a change got merged really quickly. This is a self-defeating mindset, especially considering that a very small fraction of changes *should* be merged in the first place. The statistics set you up for “failure” as defined by this metric.
 
 A healthier mindset is to see these things as personal projects. Can I work on something fun? Can I learn some new ideas? Try out a cool technique? Can I start to learn a large codebase with an eye towards making bigger changes or just to learn how to make something big of my own? Can I teach other people the interesting things I learned? Can I set other people up to do a better job?
 
-this way of thinking makes things a lot nicer if you have a hibernating pull request (blocked on prioritization or something). You have explored an implementation strategy. Possibly the right one ultimately. When prioritization changes, someone will show up to a great PR and be really grateful for your work!
+This way of thinking makes things a lot nicer if you have a hibernating pull request (blocked on prioritization or something). You have explored an implementation strategy. Possibly the right one ultimately. When prioritization changes, someone will show up to a great PR and be really grateful for your work!
 
 
 ## Tone / Relationships
+
+> It's the weekend, I cannot wait to get attitude from a stranger on the internet! &mdash; No One Ever
 
 It can be really frustrating when things are going slow. Maybe no one is replying to you or things seem stalled. 100% of people who do open source work experience this.
 
