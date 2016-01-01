@@ -8,13 +8,13 @@ The number one skill here is empathy. Am I treating people nice? Do I have reaso
 
 Ask yourself these questions when creating a new issue:
 
-  * [ ] Is your title as clear and specific as possible?
-  * [ ] Did you include a minimal, reproducable example? Is it an [SSCCE][sscce]?
-  * [ ] What OS and browser are you using? What versions?
-  * [ ] What version of Elm are you using?
-  * [ ] Is there anything weird about your computer we should know?
-  * [ ] How long would it take for a reader to figure out what you are trying to say? Can it be less time?
-  * [ ] Will a reader spend a lot of time building or installing things? Can this be avoided?
+  * [x] Is your title as clear and specific as possible?
+  * [x] Did you include a minimal, reproducable example? Is it an [SSCCE][sscce]?
+  * [x] What OS and browser are you using? What versions?
+  * [x] What version of Elm are you using?
+  * [x] Is there anything weird about your computer we should know?
+  * [x] How long would it take for a reader to figure out what you are trying to say? Can it be less time?
+  * [x] Will a reader spend a lot of time building or installing things? Can this be avoided?
 
 Sometimes you cannot do all of these, and that is totally fine! Still open the issue, but make a note about what is missing and ask for help.
 
