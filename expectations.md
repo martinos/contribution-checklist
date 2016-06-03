@@ -1,42 +1,41 @@
 
 # Expectations
 
-The easiest way to have more fun in open source is to know what to expect from The Process! This page outlines a few things that can seem frustrating, but make sense when you see the bigger picture.
+Issues and pull requests require patience.
+
+The workflow around Elm is optimized for *throughput* over *latency*. This means certain requests may take longer, but overall, work is completed more quickly.
+
+Here is why:
+
+  - [Work on Elm projects is batched.](#batching)
+  - [Elm values holistic design.](#holistic-design)
 
 
-## “Simple” Problems
+## Batching
 
-> If there was a $20 bill on the ground, somebody would have already picked it up. &mdash; Economics Joke
+Work on Elm projects is batched.
 
-If something “simple” is taking a long time, there is probably a good reason. It probably means:
+To do great work on a compiler, you really need to get deeply immersed in the problems people face and the details of the code. The same is true for a package manager. Or for a REPL. Or for documentation. Now the problem is:
 
-  1. It is more complicated than it seems. Maybe it makes weird assumptions or interacts with something else in a bad way.
-  2. To explain why it is complicated may take longer than just fixing it.
-  3. The overall prioritization of work across the entire project means that “the best option” is to circle back to the issue at a later date.
+  1. One cannot be deeply immersed in all of these projects at the same time.
+  2. Switching between projects can take a few days.
 
-The third one is the most insidious because it means a medium complexity issue in `core` can get blocked by an unrelated revamp of `elm-package`. Issues are resolved most efficiently when you can spend one or two solid days focused on the relevant repo, so this “batching” often means that the fastest *overall* outcome means individual items may stall for a while.
-
-So things can hibernate for a bunch of reasons, but do not get discouraged! It seems that this is a natural part of The Process, and the best thing to do is to try something else until it is unblocked!
+Because of this, it makes sense to batch work on each project. Focus intensely on one thing at a time. This means that a &ldquo;simple&rdquo; issue on `elm-lang/core` may be blocked by ongoing work on `elm-package`.
 
 
-## Results
+## Holistic Design
 
-> Life is a journey, not a destination. &mdash; Ralph Waldo Emerson
+&ldquo;Simple&rdquo; issues are often much more interconnected than you think.
 
-A lot of folks think that a successful result implies that a change got merged really quickly. This is a self-defeating mindset, especially considering that a very small fraction of changes *should* be merged in the first place. The statistics set you up for “failure” as defined by this metric.
+Imagine there are 20 suggestions on how to make something better. Taken *individually*, each one is probably pretty easy to deal with. Taken *together*, you are talking about quite serious design changes. Does that design have a coherent vision? Is it directed at the needs of your intended users? Do all the parts fit together? Can you find a simpler design that addresses all 20 suggestions in a nicer way?
 
-A healthier mindset is to see these things as personal projects. Can I work on something fun? Can I learn some new ideas? Try out a cool technique? Can I start to learn a large codebase with an eye towards making bigger changes or just to learn how to make something big of my own? Can I teach other people the interesting things I learned? Can I set other people up to do a better job?
-
-This way of thinking makes things a lot nicer if you have a hibernating pull request (blocked on prioritization or something). You have explored an implementation strategy. Possibly the right one ultimately. When prioritization changes, someone will show up to a great PR and be really grateful for your work!
+One of the big benefits of batching work is that the review process is *structured* for holistic design. By allowing time for folks to share their experiences and suggestions, it becomes possible to consider them all together and better balance their needs. Shifting towards real-time responses on everything would *necessarily* degrade the overall design quality.
 
 
-## Tone / Relationships
+## An Example
 
-> It's the weekend, I cannot wait to get attitude from a stranger on the internet! &mdash; No One Ever
+I think [this issue](https://github.com/elm-lang/elm-package/pull/177) shows what batching and holistic design mean in practice.
 
-It can be really frustrating when things are going slow. Maybe no one is replying to you or things seem stalled. 100% of people who do open source work experience this.
+Focus in December was on [this](http://elm-lang.org/blog/new-adventures-for-elm). Focus from January to May was on [Elm 0.17](http://elm-lang.org/blog/farewell-to-frp). When focus turned to `elm-package` we were able to find a far better resolution.
 
-One natural way to handle this is get mad at people. Unfortunately, this is very likely to make things worse. No one wants to get yelled at by an internet stranger at their hobby or side-project. So they won't! They do not owe you anything and can just go do something more fun instead. So it is not necissarily wrong to be mad, it just will not help you achieve your goal. Furthermore, it will hurt future efforts if you have bad relationships with the people you are trying to collaborate with!
-
-When people collaborate well together, a bunch of factors usually come together. *They trust each other.* Everyone knows that the others are doing their best to make something cool. *They are having fun!* Almost everyone working on open source is doing it for fun. Things go faster and work better when you feel good about the process. **So it just works better to give others the benefit of the doubt and to not take things too seriously.** Open source goes faster when it is fun and friendly!
-
+In the year 2017 (or 2030) will people remember whether this got done in January or June? Obviously not! Users will only know if the hints are helpful or annoying. So yes, waiting a few months feels like a long time to us, but this is a project that will live for decades. On that timescale it is better to do things *right* than to do things *right now*.
