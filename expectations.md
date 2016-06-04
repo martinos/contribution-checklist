@@ -3,7 +3,7 @@
 
 Issues and pull requests require patience.
 
-The workflow around Elm is optimized for *throughput* over *latency*. This means certain requests may take longer, but overall, work is completed more quickly.
+The workflow around Elm is optimized for throughput, not latency. This means certain requests may take longer, but overall, work is completed more quickly.
 
 Here is why:
 
@@ -11,7 +11,7 @@ Here is why:
   - [Elm values holistic design.](#holistic-design)
 
 
-## Batching
+### Batching
 
 Work on Elm projects is batched.
 
@@ -23,7 +23,7 @@ To do great work on a compiler, you really need to get deeply immersed in the pr
 Because of this, it makes sense to batch work on each project. Focus intensely on one thing at a time. This means that a &ldquo;simple&rdquo; issue on `elm-lang/core` may be blocked by ongoing work on `elm-package`.
 
 
-## Holistic Design
+### Holistic Design
 
 &ldquo;Simple&rdquo; issues are often much more interconnected than you think.
 
