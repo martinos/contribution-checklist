@@ -36,6 +36,8 @@ One of the big benefits of batching work is that the review process is *structur
 
 I think [this issue](https://github.com/elm-lang/elm-package/pull/177) shows what batching and holistic design mean in practice.
 
-Focus in December was on [this](http://elm-lang.org/blog/new-adventures-for-elm). Focus from January to May was on [Elm 0.17](http://elm-lang.org/blog/farewell-to-frp). When focus turned to `elm-package` we were able to find a far better resolution.
+It took about a week to revamp all the error messages for `elm-package`, ultimately leading to the fix in this case. Should [Elm 0.17](http://elm-lang.org/blog/farewell-to-frp) have blocked for an extra week for this? Is it smart to have so many changes in a single release? Do these changes fit into the overall narative of the release?
 
-In the year 2017 (or 2030) will people remember whether this got done in January or June? Obviously not! Users will only know if the hints are helpful or annoying. So yes, waiting a few months feels like a long time to us, but this is a project that will live for decades. On that timescale it is better to do things *right* than to do things *right now*.
+In the year 2017 or 2030, users will only know if things are nice or if they suck. January or July of 2016 makes no difference to them. So waiting a few months feels like a long time to us, but it is not about us!
+
+When a project is going to live for decades, it is better to do things *right* than to do things *right now*.
