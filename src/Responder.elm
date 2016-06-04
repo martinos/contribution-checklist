@@ -11,15 +11,14 @@ import Json.Decode as Json exposing ((:=))
 issueMessage : String
 issueMessage = """
 
-Thanks for creating this issue! Make sure you did everything on the
-[issue checklist][checklist]. Edit the title or description *directly* if
-you need to add more info.
+Thanks for the issue! Make sure you did everything on the [issue
+checklist][checklist]. My human colleagues will appreciate it!
 
-If you want to comment, keep [these things][participation] in mind! And
-everyone should have [clear expectations][expectations] about how issues go.
+Commenters should keep [these things][participation] in mind. Everyone should
+know about [batching work][expectations].
 
-[checklist]: https://github.com/process-bot/the-process/blob/master/issues.md#issue-checklist
-[participation]: https://github.com/process-bot/the-process/blob/master/issues.md#issue-participation
+[checklist]: https://github.com/process-bot/the-process/blob/master/issues.md
+[participation]: https://github.com/process-bot/the-process/blob/master/participation.md
 [expectations]: https://github.com/process-bot/the-process/blob/master/expectations.md
 
 """
@@ -27,6 +26,16 @@ everyone should have [clear expectations][expectations] about how issues go.
 
 pullMessage : String
 pullMessage = """
+
+Thanks for the pull request! Make sure you did everything on the [pull request
+checklist][checklist]. My human colleagues will appreciate it!
+
+Commenters should keep [these things][participation] in mind. Everyone should
+know about [batching work][expectations].
+
+[checklist]: https://github.com/process-bot/the-process/blob/master/pulls.md
+[participation]: https://github.com/process-bot/the-process/blob/master/participation.md
+[expectations]: https://github.com/process-bot/the-process/blob/master/expectations.md
 
 """
 
