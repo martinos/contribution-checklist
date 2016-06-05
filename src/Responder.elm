@@ -1,7 +1,19 @@
 port module Responder exposing (..)
 
+import Html
+import Html.App as App
 import Http
 import Json.Decode as Json exposing ((:=))
+import Task
+
+
+main =
+  App.program
+    { init = () ! []
+    , update = update
+    , view = \_ -> Html.text "Hello!"
+    , subscriptions = subscriptions
+    }
 
 
 
@@ -102,7 +114,7 @@ port events : (String -> msg) -> Sub msg
 
 
 subscriptions : model -> Sub Msg
-subscriptions =
+subscriptions _ =
   events decodeEvent
 
 
@@ -137,7 +149,7 @@ pullOpened =
 
 issue : String -> Json.Decoder Issue
 issue kind =
-  Json.map3 (always Issue)
+  Json.object3 (always Issue)
     ("action" := opened)
     (Json.at [ "repository", "full_name" ] Json.string)
     (Json.at [ kind, "number" ] Json.int)
