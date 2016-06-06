@@ -67,6 +67,16 @@ function withBody(request, callback)
 
 function commentOnIssue(json)
 {
+	try
+	{
+		commentOnIssueHelp(json);
+	}
+	catch(e) {}
+}
+
+
+function commentOnIssueHelp(json)
+{
 	var event = JSON.parse(json);
 
 	if (event.action !== 'opened')
