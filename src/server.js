@@ -77,8 +77,8 @@ function makeMessage(noun, path)
 		'',
 		'Here is [what to expect next][expectations], and if anyone wants to comment, keep [these things][participation] in mind.',
 		'',
-		'[checklist]: https://github.com/process-bot/the-process/blob/master/' + path + '.md',
-		'[expectations]: https://github.com/process-bot/the-process/blob/master/expectations.md',
-		'[participation]: https://github.com/process-bot/the-process/blob/master/participation.md'
+		'[checklist]: https://github.com/process-bot/contribution-checklist/blob/master/' + path + '.md',
+		'[expectations]: https://github.com/process-bot/contribution-checklist/blob/master/expectations.md',
+		'[participation]: https://github.com/process-bot/contribution-checklist/blob/master/participation.md'
 	].join('\n');
 }
