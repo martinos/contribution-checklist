@@ -1,11 +1,10 @@
-# The Process
+# Contribution Checklist
 
-Collaborating on open source projects is tough! Often folks want to help, but there is a whole set of communication skills that you must learn to be really effective and have the most fun.
+Creating great issues and pull requests is actually kind of tricky. Even folks who are super experienced forget important details sometimes! So whether you are opening your first issue or your hundreth, be sure to go through the relevant checklist:
 
-This repo distills some successful patterns of thought and behavior into guidelines for:
+  * [Issue Checklist](issues.md)
+  * [Pull Request Checklist](pulls.md)
 
-  * [issues](issues.md)
-  * [pull requests](pulls.md)
-  * [expectations](expectations.md)
+From there, it is important to know [what to expect](expectations.md) and [how to participate](participation.md).
 
-A robot named [process-bot](https://github.com/process-bot) reads GitHub issues and tries to help folks follow these guidelines!
+Normally no one would ever find this repo, so a robot named [process-bot](https://github.com/process-bot) wanders around telling people about it.
