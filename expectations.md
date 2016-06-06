@@ -17,7 +17,7 @@ Work on Elm projects is batched.
 
 To do great work on a compiler, you really need to get deeply immersed in the problems people face and the details of the code. The same is true for a package manager. Or for a REPL. Or for documentation. Now the problem is:
 
-  1. One cannot be deeply immersed in all of these projects at the same time.
+  1. It is not possible to be deeply immersed in all of these projects at the same time.
   2. Switching between projects can take a few days.
 
 Because of this, it makes sense to batch work on each project. Focus intensely on one thing at a time. This means that a &ldquo;simple&rdquo; issue on `elm-lang/core` may be blocked by ongoing work on `elm-package`.
