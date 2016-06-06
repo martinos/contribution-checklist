@@ -38,8 +38,8 @@ var http = require('http');
 var server = http.createServer();
 
 server.on('request', function(request, response) {
-	response.end();
 	withBody(request, commentOnIssue);
+	response.end();
 });
 
 server.listen(PORT, function(){
@@ -51,8 +51,6 @@ server.listen(PORT, function(){
 
 function withBody(request, callback)
 {
-	console.log(request.headers);
-
 	var chunks = [];
 	request.on('data', function(chunk) {
 		chunks.push(chunk);
@@ -73,7 +71,6 @@ function commentOnIssue(json)
 	}
 	catch(e) {}
 }
-
 
 function commentOnIssueHelp(json)
 {
