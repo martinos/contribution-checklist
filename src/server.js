@@ -1,41 +1,98 @@
-var http = require('http');
-var elm = require('./responder.js');
 
 
-// SETUP ELM
+// READ CONFIGURATION FILE
 
-var responder = elm.Responder.worker();
+var config = require("./config.json");
 
-function feedResponder(jsonString)
+if (typeof config.port === 'undefined')
 {
-	responder.ports.events.send(jsonString);
+	console.error('Need a port.');
+	process.exit(1);
 }
+
+if (typeof config.token === 'undefined')
+{
+	console.error('Need a token.');
+	process.exit(1);
+}
+
+var PORT = config.port;
+var TOKEN = config.token;
+
+
+// SETUP GITHUB
+
+var Client = require("github");
+var github = new Client({ debug: false });
+
+github.authenticate({
+    type: "oauth",
+    token: TOKEN
+});
 
 
 // SETUP SERVER
 
-var PORT = 8080;
+var http = require('http');
 
 var server = http.createServer();
 
 server.on('request', function(request, response) {
-	getBody(request, feedResponder);
-	response.end('thanks');
+	response.end();
+	withBody(request, commentOnIssue);
 });
 
 server.listen(PORT, function(){
-    console.log("Server listening on: http://localhost:%s", PORT);
+    console.log("Server listening on: http://localhost:" + PORT);
 });
 
 
-// HELPERS
+// READ DATA
 
-function getBody(request, callback)
+function withBody(request, callback)
 {
-	var body = [];
+	console.log(request.headers);
+
+	var chunks = [];
 	request.on('data', function(chunk) {
-		body.push(chunk);
+		chunks.push(chunk);
 	}).on('end', function() {
-		callback(Buffer.concat(body).toString());
+		var body = Buffer.concat(chunks).toString();
+		callback(body);
 	});
+}
+
+
+// WRITE DATA
+
+function commentOnIssue(json)
+{
+	var event = JSON.parse(json);
+
+	if (event.action !== 'opened')
+	{
+		return;
+	}
+
+	github.issues.createComment({
+		user: event.repository.owner.login,
+		repo: event.repository.name,
+		number: (event.issue || event.pull_request).number,
+		body: typeof event.issue !== 'undefined'
+			? makeMessage('issue', 'issues')
+			: makeMessage('pull request', 'pulls')
+	});
+}
+
+function makeMessage(noun, path)
+{
+	return [
+		'Thanks for the ' + noun + '! Make sure it satisfies [this checklist][checklist]. My human colleagues will appreciate it!',
+		'',
+		'Here is [what to expect next][expectations], and if anyone wants to comment, keep [these things][participation] in mind.',
+		'',
+		'[checklist]: https://github.com/process-bot/the-process/blob/master/' + path + '.md',
+		'[expectations]: https://github.com/process-bot/the-process/blob/master/expectations.md',
+		'[participation]: https://github.com/process-bot/the-process/blob/master/participation.md'
+	].join('\n');
 }
