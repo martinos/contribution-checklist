@@ -1,23 +1,43 @@
 
-
 // READ CONFIGURATION FILE
 
 var config = require("./config.json");
 
-if (typeof config.port === 'undefined')
+function demand(name)
 {
-	console.error('Need a port.');
+	if (name in config)
+	{
+		return config[name];
+	}
+	console.error('Need `' + name + '` in config.json');
 	process.exit(1);
 }
 
-if (typeof config.token === 'undefined')
-{
-	console.error('Need a token.');
-	process.exit(1);
-}
+var PORT = demand('port');
+var TOKEN = demand('token');
+var SECRET = demand('secret');
 
-var PORT = config.port;
-var TOKEN = config.token;
+
+// LISTEN FOR EVENTS
+
+var server = require('githubhook')({
+	port: PORT,
+	secret: SECRET,
+	logger: {
+		log: function() {},
+		error: function() {}
+	}
+});
+
+server.listen();
+
+server.on('*', function (event, repo, ref, data) {
+	try
+	{
+		commentOnIssue(data);
+	}
+	catch(e) {}
+});
 
 
 // SETUP GITHUB
@@ -31,51 +51,10 @@ github.authenticate({
 });
 
 
-// SETUP SERVER
+// COMMENT ON ISSUES
 
-var http = require('http');
-
-var server = http.createServer();
-
-server.on('request', function(request, response) {
-	withBody(request, commentOnIssue);
-	response.end();
-});
-
-server.listen(PORT, function(){
-    console.log("Server listening on: http://localhost:" + PORT);
-});
-
-
-// READ DATA
-
-function withBody(request, callback)
+function commentOnIssue(event)
 {
-	var chunks = [];
-	request.on('data', function(chunk) {
-		chunks.push(chunk);
-	}).on('end', function() {
-		var body = Buffer.concat(chunks).toString();
-		callback(body);
-	});
-}
-
-
-// WRITE DATA
-
-function commentOnIssue(json)
-{
-	try
-	{
-		commentOnIssueHelp(json);
-	}
-	catch(e) {}
-}
-
-function commentOnIssueHelp(json)
-{
-	var event = JSON.parse(json);
-
 	if (event.action !== 'opened')
 	{
 		return;
