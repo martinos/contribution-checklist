@@ -15,6 +15,8 @@ Issues are for bugs. If you have questions, ask them on a [community forum][comm
 
 [sscce]: http://sscce.org
 
+Just modify your initial comment if you forgot anything! Not new comments.
+
 
 ## Guidelines
 
